@@ -2,13 +2,14 @@
   <div>
     <h1>{{ msg }}</h1>
     <counter />
-    <item-list />
+    <todo />
   </div>
 </template>
 
 <script>
 import Counter from "./counter.vue";
 import ItemList from "./ItemList.vue";
+import Todo from "./Todo.vue";
 
 export default {
   name: "HelloWorld",
@@ -17,7 +18,10 @@ export default {
   },
   components: {
     Counter,
-    ItemList
+    // eslint-disable-next-line vue/no-unused-components
+    ItemList,
+    // eslint-disable-next-line vue/no-unused-components
+    Todo
   }
 };
 </script>
